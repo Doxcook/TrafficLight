@@ -19,7 +19,7 @@ public class Controller {
         Timer timer = new Timer();
         timer.scheduleAtFixedRate(new TimerTask() {
             @Override
-            public void run() {
+            public void run() { //Метод run() содержит код, который нужно выполнять.
                 model.switchToNextState(); // перекчение состояния
                 frame.getPanel().updateLights(model.getState()); // Обновляем панель
             }

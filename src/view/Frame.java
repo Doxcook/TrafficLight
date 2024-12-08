@@ -17,6 +17,9 @@ public class Frame extends JFrame {
         panel = new Panel();
         add(panel);
 
+        ImageIcon icon = new ImageIcon(getClass().getResource("logo.png"));
+        setIconImage(icon.getImage());
+
     }
 
     public Panel getPanel() {

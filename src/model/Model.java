@@ -21,6 +21,9 @@ public class Model {
         return state;
     }
 
+    public void setState(int state) {
+        this.state = state;
+    }
 
     // переключение состояния, если не понятно смотреть файл СОСТОЯНИЕ
     public void switchToNextState() {
